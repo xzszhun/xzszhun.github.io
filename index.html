@@ -7,6 +7,23 @@
   <link rel="stylesheet" href="">
 </head>
 <body>
-  我的个人主页
+  1、HTML
+    所谓同源：协议、域名、端口一致是为同源。
+              http://www.xxx.com:8080 其中http即为协议，www.xxx.com 即为 域名，8080 即为 端口
+    所谓域名的划分：以下面为例子进行理解
+      .com 顶级域名
+      baidu.com 一级域名
+      www.baidu.com 二级域名
+      bbs.baidu .com 二级域名
+      tieba.baidu .com 二级域名
+
+    何为跨域：当二级域名、协议、端口完全相同时，才属于同域。否则就属于跨域。如http://tieba.baidu.com与http://image.baidu.com 就是同域
+    如何解决跨域问题：
+      1、jsonp
+      2、CSRF
+      3、修改document.domain+iframe 这种只在主域相同时才能使用
+
+    HTML加载过程：
+
 </body>
 </html>
