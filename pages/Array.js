@@ -2,7 +2,7 @@ var arrayObject = [],
   separator = "",
   start = 0,
   end = 0,
-  sortby = functioin(a,b){}
+  sortby = function(a,b){}
 // 查找搜索
 
 // 截取替换
@@ -23,3 +23,9 @@ var arrayObject = [],
 // pop，shift,push,unshift,splice，sort，reverse
 // 对数组元素进行操作，但不会对原数组产生变换的有
 // slice
+
+// es5 新增方法
+
+// forEach遍历
+// [1,2,3].forEach(function(val,index,arr){},context)
+

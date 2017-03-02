@@ -18,12 +18,26 @@
       tieba.baidu .com 二级域名
 
     何为跨域：当二级域名、协议、端口完全相同时，才属于同域。否则就属于跨域。如http://tieba.baidu.com与http://image.baidu.com 就是同域
-    如何解决跨域问题：
+    如何解决跨域请求问题：
       1、jsonp
       2、CSRF
       3、修改document.domain+iframe 这种只在主域相同时才能使用
 
     HTML加载过程：
+      url地址解析-建立tcl三次握手-浏览器发送请求-服务器响应请求-发送html代码-浏览器接受html，并解析-请求相关资源文件-浏览器完成渲染
+    tcl三次握手的具体过程；
+    <script>
+      var script = document.createElement("script");
+      function getCallbackList(data){
+        console.log(data);
+      }
+      script.src = "http://app315.kf315.net/Module/Sys/OrgList.aspx?response=json&function=getList&callback=getCallbackList";
+      script.onload = function(){
+        console.log(script.innerHTML);
+      }
+      document.body.appendChild(script);
 
+
+    </script>
 </body>
 </html>
