@@ -29,3 +29,26 @@ var arrayObject = [],
 // forEach遍历
 // [1,2,3].forEach(function(val,index,arr){},context)
 
+// 检测是否是数组
+Array.isArray()
+instanceof 
+
+// 转换为数组
+Array.prototype.slice.call()
+"".split(',')
+
+// 实现栈
+使用push()添加，使用pop()弹出
+// 反向操作栈
+  使用unshift添加，使用shift弹出
+// 队列方法
+使用push添加，使用shift()弹出。unshift弹出数组第一个元素
+
+//反向操作队列
+使用unshift添加，使用pop弹出
+// 重排序
+// sort默认升序，模式比较字符串 [0,1,5,10,15] ==> [0,1,10,15,5]。字符串是逐个字符进行比较，所以"5">"10"
+sort(function(a,b){
+  return a-b;// 0 不动，负值/false，则a在b前。相反b在a前
+});
+reverse(); // 反转顺序
